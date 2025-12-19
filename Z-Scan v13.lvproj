@@ -90,11 +90,13 @@
 					<Item Name="datos osciloscopio.ctl" Type="VI" URL="../LV Source/Type Definitions/datos osciloscopio.ctl"/>
 					<Item Name="Datos Zaber.ctl" Type="VI" URL="../LV Source/Type Definitions/Datos Zaber.ctl"/>
 					<Item Name="parametros motores.ctl" Type="VI" URL="../LV Source/Type Definitions/parametros motores.ctl"/>
+					<Item Name="Program data.ctl" Type="VI" URL="../LV Source/Type Definitions/Program data.ctl"/>
 					<Item Name="tab wizard.ctl" Type="VI" URL="../LV Source/Type Definitions/tab wizard.ctl"/>
 					<Item Name="Tipos de montura.ctl" Type="VI" URL="/H/Mi unidad/Departamento de Ingenieria/Investigadores/Gabriel Ramos/Proyecto Monturas v13/LV Source/Type Definitions/Tipos de montura.ctl"/>
 				</Item>
 				<Item Name="User Interfase" Type="Folder">
 					<Item Name="Inicio Software.vi" Type="VI" URL="../LV Source/User Interfase/Inicio Software.vi"/>
+					<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
 					<Item Name="Nuevo Asistente.vi" Type="VI" URL="../LV Source/User Interfase/Nuevo Asistente.vi"/>
 				</Item>
 				<Item Name="Utilities" Type="Folder">
@@ -112,7 +114,7 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
+		<Item Name="Main_QMH.vi" Type="VI" URL="../LV Source/User Interfase/Main_QMH.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
