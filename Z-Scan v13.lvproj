@@ -21,9 +21,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Proyecto Monturas v13" Type="Folder" URL="..">
+		<Item Name="Z-Scan" Type="Folder" URL="..">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Tipos de montura.ctl" Type="VI" URL="/H/Mi unidad/Departamento de Ingenieria/Investigadores/Gabriel Ramos/Proyecto Monturas v13/LV Source/Type Definitions/Tipos de montura.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
@@ -50,16 +51,13 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Users/Enrique/Desktop/zscan enero 2017/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{52573BB2-29EC-40BD-9CF3-C21E20B1917F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1DF3EB1D-453E-4BE2-B51D-53CDEAFE0852}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Proyecto Monturas v5 oct 2017/LV Source/User Interfase/Inicio Software.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Z-Scan/LV Source/User Interfase/Inicio Software.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Proyecto Monturas v5 oct 2017/LV Source/User Interfase/Main.vi</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">CIO</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Control Monturas</Property>
 				<Property Name="TgtF_internalName" Type="Str">Monturas GARAMOSO</Property>
