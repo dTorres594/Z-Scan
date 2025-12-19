@@ -95,7 +95,6 @@
 				</Item>
 				<Item Name="User Interfase" Type="Folder">
 					<Item Name="Inicio Software.vi" Type="VI" URL="../LV Source/User Interfase/Inicio Software.vi"/>
-					<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
 					<Item Name="Nuevo Asistente.vi" Type="VI" URL="../LV Source/User Interfase/Nuevo Asistente.vi"/>
 				</Item>
 				<Item Name="Utilities" Type="Folder">
@@ -113,6 +112,7 @@
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
