@@ -1,0 +1,4 @@
+maximo
+910098
+
+minimo 0
