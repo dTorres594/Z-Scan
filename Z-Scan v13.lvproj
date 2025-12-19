@@ -21,10 +21,98 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Z-Scan" Type="Folder" URL="..">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Z-Scan" Type="Folder">
+			<Item Name="Application Build" Type="Folder"/>
+			<Item Name="data" Type="Folder">
+				<Item Name="limites de la montura zaber.txt" Type="Document" URL="../data/limites de la montura zaber.txt"/>
+			</Item>
+			<Item Name="Documentacion" Type="Folder">
+				<Item Name="Referencia" Type="Folder">
+					<Item Name="Correspondencia" Type="Folder"/>
+					<Item Name="Especificaciones" Type="Folder">
+						<Item Name="Diagrama estados proceso captura.drawing" Type="Document" URL="../Documentacion/Referencia/Especificaciones/Diagrama estados proceso captura.drawing"/>
+						<Item Name="Diagrama estados proceso captura.pdf" Type="Document" URL="../Documentacion/Referencia/Especificaciones/Diagrama estados proceso captura.pdf"/>
+						<Item Name="Especificaciones del proyecto.docx" Type="Document" URL="../Documentacion/Referencia/Especificaciones/Especificaciones del proyecto.docx"/>
+					</Item>
+					<Item Name="Esquemáticos" Type="Folder"/>
+					<Item Name="Lista de materiales" Type="Folder"/>
+					<Item Name="Manuales de instrumentos" Type="Folder">
+						<Item Name="Manual Zaber T-LSR.pdf" Type="Document" URL="../Documentacion/Referencia/Manuales de instrumentos/Manual Zaber T-LSR.pdf"/>
+						<Item Name="Tektronix TDS 100.pdf" Type="Document" URL="../Documentacion/Referencia/Manuales de instrumentos/Tektronix TDS 100.pdf"/>
+					</Item>
+				</Item>
+			</Item>
+			<Item Name="Graphics" Type="Folder">
+				<Item Name="Logos" Type="Folder"/>
+				<Item Name="Screen Shots" Type="Folder"/>
+				<Item Name="bi-polar-stepper-motor-windings.jpg" Type="Document" URL="../Graphics/bi-polar-stepper-motor-windings.jpg"/>
+				<Item Name="bipolar.gif" Type="Document" URL="../Graphics/bipolar.gif"/>
+				<Item Name="unipolar.gif" Type="Document" URL="../Graphics/unipolar.gif"/>
+			</Item>
+			<Item Name="LV Source" Type="Folder">
+				<Item Name="Analysis" Type="Folder"/>
+				<Item Name="Configuracion" Type="Folder">
+					<Item Name="datos al Motor uni bi.vi" Type="VI" URL="../LV Source/Configuracion/datos al Motor uni bi.vi"/>
+					<Item Name="Zaber Home.vi" Type="VI" URL="../LV Source/Configuracion/Zaber Home.vi"/>
+				</Item>
+				<Item Name="Constantes" Type="Folder">
+					<Item Name="Zaber resolution ---constant.vi" Type="VI" URL="../LV Source/Constantes/Zaber resolution ---constant.vi"/>
+				</Item>
+				<Item Name="DAQ" Type="Folder">
+					<Item Name="Motion control Custom motor.vi" Type="VI" URL="../LV Source/DAQ/Motion control Custom motor.vi"/>
+					<Item Name="sr830 dsp lock in.vi" Type="VI" URL="../LV Source/DAQ/sr830 dsp lock in.vi"/>
+					<Item Name="Tektronix cursor Read.vi" Type="VI" URL="../LV Source/DAQ/Tektronix cursor Read.vi"/>
+					<Item Name="Tektronix INIT.vi" Type="VI" URL="../LV Source/DAQ/Tektronix INIT.vi"/>
+					<Item Name="Tektronix TDS 200 1000 2000 Series Acquire Continuous Waveform.vi" Type="VI" URL="../LV Source/DAQ/Tektronix TDS 200 1000 2000 Series Acquire Continuous Waveform.vi"/>
+				</Item>
+				<Item Name="Data Manipulation" Type="Folder">
+					<Item Name="Parametros de adquisición texto para main.vi" Type="VI" URL="../LV Source/Data Manipulation/Parametros de adquisición texto para main.vi"/>
+				</Item>
+				<Item Name="File IO" Type="Folder">
+					<Item Name="Creador ruta archivo para lectura continua.vi" Type="VI" URL="../LV Source/File IO/Creador ruta archivo para lectura continua.vi"/>
+					<Item Name="Guardar datos.vi" Type="VI" URL="../LV Source/File IO/Guardar datos.vi"/>
+					<Item Name="Lectura archivos RPS para análisis version memo.vi" Type="VI" URL="../LV Source/File IO/Lectura archivos RPS para análisis version memo.vi"/>
+					<Item Name="Lectura archivos RPS para análisis.vi" Type="VI" URL="../LV Source/File IO/Lectura archivos RPS para análisis.vi"/>
+				</Item>
+				<Item Name="Manejo de Errores" Type="Folder"/>
+				<Item Name="Menus" Type="Folder">
+					<Item Name="Main Menu.rtm" Type="Document" URL="../LV Source/Menus/Main Menu.rtm"/>
+				</Item>
+				<Item Name="Remote Targets" Type="Folder">
+					<Item Name="Remote Target 1" Type="Folder"/>
+					<Item Name="Remote Target 2" Type="Folder"/>
+				</Item>
+				<Item Name="Type Definitions" Type="Folder">
+					<Item Name="Asistente de adquisicion Cluster.ctl" Type="VI" URL="../LV Source/Type Definitions/Asistente de adquisicion Cluster.ctl"/>
+					<Item Name="Comandos Zaber.ctl" Type="VI" URL="../LV Source/Type Definitions/Comandos Zaber.ctl"/>
+					<Item Name="Constante estados proceso adquisición.ctl" Type="VI" URL="../LV Source/Type Definitions/Constante estados proceso adquisición.ctl"/>
+					<Item Name="Datos a Guardar.ctl" Type="VI" URL="../LV Source/Type Definitions/Datos a Guardar.ctl"/>
+					<Item Name="datos osciloscopio.ctl" Type="VI" URL="../LV Source/Type Definitions/datos osciloscopio.ctl"/>
+					<Item Name="Datos Zaber.ctl" Type="VI" URL="../LV Source/Type Definitions/Datos Zaber.ctl"/>
+					<Item Name="parametros motores.ctl" Type="VI" URL="../LV Source/Type Definitions/parametros motores.ctl"/>
+					<Item Name="tab wizard.ctl" Type="VI" URL="../LV Source/Type Definitions/tab wizard.ctl"/>
+					<Item Name="Tipos de montura.ctl" Type="VI" URL="/H/Mi unidad/Departamento de Ingenieria/Investigadores/Gabriel Ramos/Proyecto Monturas v13/LV Source/Type Definitions/Tipos de montura.ctl"/>
+				</Item>
+				<Item Name="User Interfase" Type="Folder">
+					<Item Name="Inicio Software.vi" Type="VI" URL="../LV Source/User Interfase/Inicio Software.vi"/>
+					<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
+					<Item Name="Nuevo Asistente.vi" Type="VI" URL="../LV Source/User Interfase/Nuevo Asistente.vi"/>
+				</Item>
+				<Item Name="Utilities" Type="Folder">
+					<Item Name="contador.vi" Type="VI" URL="../LV Source/Utilities/contador.vi"/>
+					<Item Name="Untitled 1.vi" Type="VI" URL="../LV Source/Utilities/Untitled 1.vi"/>
+				</Item>
+				<Item Name="Variables" Type="Folder"/>
+				<Item Name="Vi Server" Type="Folder"/>
+				<Item Name="Vis de Diagnostico" Type="Folder"/>
+				<Item Name="Vis Prototipo" Type="Folder">
+					<Item Name="convertidor de pasos a distancia v1.vi" Type="VI" URL="../LV Source/Vis Prototipo/convertidor de pasos a distancia v1.vi"/>
+					<Item Name="Extractor pasos para montura zaber.vi" Type="VI" URL="../LV Source/Vis Prototipo/Extractor pasos para montura zaber.vi"/>
+					<Item Name="pasos a mover.vi" Type="VI" URL="../LV Source/Vis Prototipo/pasos a mover.vi"/>
+					<Item Name="Zaber Expert - Write Commands and Read Responses.vi" Type="VI" URL="../LV Source/Vis Prototipo/Zaber Expert - Write Commands and Read Responses.vi"/>
+				</Item>
+			</Item>
 		</Item>
-		<Item Name="Tipos de montura.ctl" Type="VI" URL="/H/Mi unidad/Departamento de Ingenieria/Investigadores/Gabriel Ramos/Proyecto Monturas v13/LV Source/Type Definitions/Tipos de montura.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
