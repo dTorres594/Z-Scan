@@ -56,7 +56,7 @@
 					<Item Name="Zaber Home.vi" Type="VI" URL="../LV Source/Configuracion/Zaber Home.vi"/>
 				</Item>
 				<Item Name="Constantes" Type="Folder">
-					<Item Name="Zaber resolution ---constant.vi" Type="VI" URL="../LV Source/Constantes/Zaber resolution ---constant.vi"/>
+					<Item Name="Zaber resolution --- FGV.vi" Type="VI" URL="../LV Source/Constantes/Zaber resolution --- FGV.vi"/>
 				</Item>
 				<Item Name="DAQ" Type="Folder">
 					<Item Name="Motion control Custom motor.vi" Type="VI" URL="../LV Source/DAQ/Motion control Custom motor.vi"/>
@@ -109,6 +109,7 @@
 				<Item Name="Vis Prototipo" Type="Folder">
 					<Item Name="convertidor de pasos a distancia v1.vi" Type="VI" URL="../LV Source/Vis Prototipo/convertidor de pasos a distancia v1.vi"/>
 					<Item Name="Extractor pasos para montura zaber.vi" Type="VI" URL="../LV Source/Vis Prototipo/Extractor pasos para montura zaber.vi"/>
+					<Item Name="Get motor command.vi" Type="VI" URL="../LV Source/Configuracion/Get motor command.vi"/>
 					<Item Name="pasos a mover.vi" Type="VI" URL="../LV Source/Vis Prototipo/pasos a mover.vi"/>
 					<Item Name="Zaber Expert - Write Commands and Read Responses.vi" Type="VI" URL="../LV Source/Vis Prototipo/Zaber Expert - Write Commands and Read Responses.vi"/>
 				</Item>
