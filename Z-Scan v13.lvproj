@@ -115,6 +115,7 @@
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="Close comms.vi" Type="VI" URL="../LV Source/Vis Prototipo/Close comms.vi"/>
 		<Item Name="Main_QMH.vi" Type="VI" URL="../LV Source/User Interfase/Main_QMH.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
