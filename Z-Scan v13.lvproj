@@ -21,6 +21,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="config" Type="Folder">
+			<Item Name="config.ini" Type="Document" URL="../config/config.ini"/>
+		</Item>
 		<Item Name="Z-Scan" Type="Folder">
 			<Item Name="Application Build" Type="Folder"/>
 			<Item Name="data" Type="Folder">
@@ -82,6 +85,21 @@
 					<Item Name="Remote Target 1" Type="Folder"/>
 					<Item Name="Remote Target 2" Type="Folder"/>
 				</Item>
+				<Item Name="SubVI" Type="Folder">
+					<Item Name="Close comms.vi" Type="VI" URL="../LV Source/Vis Prototipo/Close comms.vi"/>
+					<Item Name="Config path --constant.vi" Type="VI" URL="../LV Source/Vis Prototipo/Config path --constant.vi"/>
+					<Item Name="convertidor de pasos a distancia v1.vi" Type="VI" URL="../LV Source/Vis Prototipo/convertidor de pasos a distancia v1.vi"/>
+					<Item Name="Extractor pasos para montura zaber.vi" Type="VI" URL="../LV Source/Vis Prototipo/Extractor pasos para montura zaber.vi"/>
+					<Item Name="Get motor command.vi" Type="VI" URL="../LV Source/Configuracion/Get motor command.vi"/>
+					<Item Name="Load config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Load config.vi"/>
+					<Item Name="Load meas device config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Load meas device config.vi"/>
+					<Item Name="Load Mov Dev config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Load Mov Dev config.vi"/>
+					<Item Name="pasos a mover.vi" Type="VI" URL="../LV Source/Vis Prototipo/pasos a mover.vi"/>
+					<Item Name="Save config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save config.vi"/>
+					<Item Name="Save meas device config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save meas device config.vi"/>
+					<Item Name="Save Mov Dev config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save Mov Dev config.vi"/>
+					<Item Name="Zaber Expert - Write Commands and Read Responses.vi" Type="VI" URL="../LV Source/Vis Prototipo/Zaber Expert - Write Commands and Read Responses.vi"/>
+				</Item>
 				<Item Name="Type Definitions" Type="Folder">
 					<Item Name="Asistente de adquisicion Cluster.ctl" Type="VI" URL="../LV Source/Type Definitions/Asistente de adquisicion Cluster.ctl"/>
 					<Item Name="Comandos Zaber.ctl" Type="VI" URL="../LV Source/Type Definitions/Comandos Zaber.ctl"/>
@@ -106,17 +124,10 @@
 				<Item Name="Variables" Type="Folder"/>
 				<Item Name="Vi Server" Type="Folder"/>
 				<Item Name="Vis de Diagnostico" Type="Folder"/>
-				<Item Name="Vis Prototipo" Type="Folder">
-					<Item Name="convertidor de pasos a distancia v1.vi" Type="VI" URL="../LV Source/Vis Prototipo/convertidor de pasos a distancia v1.vi"/>
-					<Item Name="Extractor pasos para montura zaber.vi" Type="VI" URL="../LV Source/Vis Prototipo/Extractor pasos para montura zaber.vi"/>
-					<Item Name="Get motor command.vi" Type="VI" URL="../LV Source/Configuracion/Get motor command.vi"/>
-					<Item Name="pasos a mover.vi" Type="VI" URL="../LV Source/Vis Prototipo/pasos a mover.vi"/>
-					<Item Name="Zaber Expert - Write Commands and Read Responses.vi" Type="VI" URL="../LV Source/Vis Prototipo/Zaber Expert - Write Commands and Read Responses.vi"/>
-				</Item>
 			</Item>
 		</Item>
-		<Item Name="Close comms.vi" Type="VI" URL="../LV Source/Vis Prototipo/Close comms.vi"/>
 		<Item Name="Main_QMH.vi" Type="VI" URL="../LV Source/User Interfase/Main_QMH.vi"/>
+		<Item Name="Validate connectio to osc.vi" Type="VI" URL="../LV Source/Vis Prototipo/Validate connectio to osc.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
