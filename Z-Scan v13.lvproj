@@ -53,7 +53,6 @@
 				<Item Name="unipolar.gif" Type="Document" URL="../Graphics/unipolar.gif"/>
 			</Item>
 			<Item Name="LV Source" Type="Folder">
-				<Item Name="Analysis" Type="Folder"/>
 				<Item Name="Configuracion" Type="Folder">
 					<Item Name="datos al Motor uni bi.vi" Type="VI" URL="../LV Source/Configuracion/datos al Motor uni bi.vi"/>
 					<Item Name="Zaber Home.vi" Type="VI" URL="../LV Source/Configuracion/Zaber Home.vi"/>
@@ -77,7 +76,6 @@
 					<Item Name="Lectura archivos RPS para análisis version memo.vi" Type="VI" URL="../LV Source/File IO/Lectura archivos RPS para análisis version memo.vi"/>
 					<Item Name="Lectura archivos RPS para análisis.vi" Type="VI" URL="../LV Source/File IO/Lectura archivos RPS para análisis.vi"/>
 				</Item>
-				<Item Name="Manejo de Errores" Type="Folder"/>
 				<Item Name="Menus" Type="Folder">
 					<Item Name="Main Menu.rtm" Type="Document" URL="../LV Source/Menus/Main Menu.rtm"/>
 				</Item>
@@ -98,6 +96,7 @@
 					<Item Name="Save config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save config.vi"/>
 					<Item Name="Save meas device config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save meas device config.vi"/>
 					<Item Name="Save Mov Dev config.vi" Type="VI" URL="../LV Source/Vis Prototipo/Save Mov Dev config.vi"/>
+					<Item Name="Validate connectio to osc.vi" Type="VI" URL="../LV Source/Vis Prototipo/Validate connectio to osc.vi"/>
 					<Item Name="Zaber Expert - Write Commands and Read Responses.vi" Type="VI" URL="../LV Source/Vis Prototipo/Zaber Expert - Write Commands and Read Responses.vi"/>
 				</Item>
 				<Item Name="Type Definitions" Type="Folder">
@@ -112,7 +111,7 @@
 					<Item Name="tab wizard.ctl" Type="VI" URL="../LV Source/Type Definitions/tab wizard.ctl"/>
 					<Item Name="Tipos de montura.ctl" Type="VI" URL="/H/Mi unidad/Departamento de Ingenieria/Investigadores/Gabriel Ramos/Proyecto Monturas v13/LV Source/Type Definitions/Tipos de montura.ctl"/>
 				</Item>
-				<Item Name="User Interfase" Type="Folder">
+				<Item Name="UI" Type="Folder">
 					<Item Name="Inicio Software.vi" Type="VI" URL="../LV Source/User Interfase/Inicio Software.vi"/>
 					<Item Name="Main.vi" Type="VI" URL="../LV Source/User Interfase/Main.vi"/>
 					<Item Name="Nuevo Asistente.vi" Type="VI" URL="../LV Source/User Interfase/Nuevo Asistente.vi"/>
@@ -121,13 +120,9 @@
 					<Item Name="contador.vi" Type="VI" URL="../LV Source/Utilities/contador.vi"/>
 					<Item Name="Untitled 1.vi" Type="VI" URL="../LV Source/Utilities/Untitled 1.vi"/>
 				</Item>
-				<Item Name="Variables" Type="Folder"/>
-				<Item Name="Vi Server" Type="Folder"/>
-				<Item Name="Vis de Diagnostico" Type="Folder"/>
 			</Item>
 		</Item>
 		<Item Name="Main_QMH.vi" Type="VI" URL="../LV Source/User Interfase/Main_QMH.vi"/>
-		<Item Name="Validate connectio to osc.vi" Type="VI" URL="../LV Source/Vis Prototipo/Validate connectio to osc.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Control Monturas" Type="EXE">
@@ -141,26 +136,41 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Enrique/Desktop/zscan enero 2017</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/ZScan</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6ED28A77-3C35-40B1-BCF5-4784AFEC7E91}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ZScan.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/Enrique/Desktop/zscan enero 2017/ZScan.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/ZScan/ZScan.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Users/Enrique/Desktop/zscan enero 2017/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1DF3EB1D-453E-4BE2-B51D-53CDEAFE0852}</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/ZScan/data</Property>
+				<Property Name="Destination[2].destName" Type="Str">config</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/ZScan/config</Property>
+				<Property Name="Destination[3].destName" Type="Str">User Interfase</Property>
+				<Property Name="Destination[3].path" Type="Path">../builds/ZScan/LV Source/User Interfase</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{02A452A4-B8F9-44A9-9196-C00C66B34761}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Z-Scan/LV Source/User Interfase/Inicio Software.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Z-Scan/LV Source/UI/Inicio Software.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/config/config.ini</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/config</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Main_QMH.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 				<Property Name="TgtF_companyName" Type="Str">CIO</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Control Monturas</Property>
 				<Property Name="TgtF_internalName" Type="Str">Monturas GARAMOSO</Property>
